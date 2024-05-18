@@ -4,7 +4,8 @@
   "info": {
     "singularName": "certification",
     "pluralName": "certifications",
-    "displayName": "Certification"
+    "displayName": "Certification",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -18,12 +19,17 @@
       "unique": true
     },
     "Logo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Description": {
+      "type": "text",
+      "required": true,
+      "minLength": 1
     }
   }
 }

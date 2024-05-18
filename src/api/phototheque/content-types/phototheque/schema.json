@@ -4,7 +4,8 @@
   "info": {
     "singularName": "phototheque",
     "pluralName": "phototheques",
-    "displayName": "Phototheque"
+    "displayName": "Phototheque",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -23,11 +24,21 @@
       "maxLength": 255
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Service": {
+      "type": "enumeration",
+      "enum": [
+        "elagage",
+        "abattage",
+        "debroussaillage",
+        "demontage"
+      ],
       "required": true
     }
   }

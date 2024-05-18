@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carte_des_travauxes",
+  "info": {
+    "singularName": "carte-des-travaux",
+    "pluralName": "carte-des-travauxes",
+    "displayName": "Carte des travaux",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Latitude": {
+      "type": "float",
+      "required": true
+    },
+    "Longitude": {
+      "type": "float",
+      "required": true
+    },
+    "Commentaire": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    }
+  }
+}
