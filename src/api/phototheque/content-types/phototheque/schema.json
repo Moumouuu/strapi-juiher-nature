@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "phototheques",
+  "info": {
+    "singularName": "phototheque",
+    "pluralName": "phototheques",
+    "displayName": "Phototheque"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "description": {
+      "type": "text",
+      "required": false,
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
